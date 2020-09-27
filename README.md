@@ -20,13 +20,14 @@ npm update @feizheng/react-demokit
 | Name      | Type   | Required | Default | Description                           |
 | --------- | ------ | -------- | ------- | ------------------------------------- |
 | className | string | false    | -       | The extended className for component. |
-| value     | object | false    | null    | The changed value.                    |
-| onChange  | func   | false    | noop    | The change handler.                   |
+| url       | string | false    | -       | The github homepage url.              |
 
 
 ## usage
 1. import css
   ```scss
+  @import "~@feizheng/react-github-corner/dist/style.scss";
+  @import "~@feizheng/react-sw-update-tips/dist/style.scss";
   @import "~@feizheng/react-demokit/dist/style.scss";
 
   // customize your styles:
@@ -35,8 +36,6 @@ npm update @feizheng/react-demokit
 2. import js
   ```js
   import NxOfflineSw from '@feizheng/next-offline-sw';
-  import ReactGithubCorner from '@feizheng/react-github-corner';
-  import ReactSwUpdateTips from '@feizheng/react-sw-update-tips';
   import React from 'react';
   import ReactDOM from 'react-dom';
   import ReactDemokit from '@feizheng/react-demokit';
@@ -56,10 +55,9 @@ npm update @feizheng/react-demokit
     render() {
       return (
         <div className="p-3 app-container">
-          <ReactDemokit className="bg-gray-800 mb-5 text-white" />
-          <button className="button">I am a button</button>
-          <ReactSwUpdateTips value={this.state.hasUpdate} />
-          <ReactGithubCorner value="https://github.com/afeiship/react-demokit" />
+          <ReactDemokit className="mb-5 text-white">
+            <button className="button">I am a button</button>
+          </ReactDemokit>
         </div>
       );
     }
