@@ -2,4 +2,20 @@ $react-demokit-options: () !default;
 
 .react-demokit {
   // your styles
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+
+  > .is-body{
+    flex: 1;
+  }
+
+  > .is-footer {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+  }
 }

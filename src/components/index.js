@@ -40,9 +40,10 @@ export default class ReactDemokit extends Component {
         data-component={CLASS_NAME}
         className={classNames(CLASS_NAME, className)}
         {...props}>
-        {children}
+        <div className="is-body">{children}</div>
         <ReactSwUpdateTips value={this.state.hasUpdate} />
         <ReactGithubCorner value={url} />
+        <footer className="is-footer">v__VERSION__</footer>
       </div>
     );
   }

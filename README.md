@@ -42,8 +42,8 @@ npm update @feizheng/react-demokit
   class App extends React.Component {
     render() {
       return (
-        <div className="p-3 app-container">
-          <ReactDemokit className="mb-5 text-white">
+        <div className="app-container">
+          <ReactDemokit>
             <button className="button">I am a button</button>
           </ReactDemokit>
         </div>
