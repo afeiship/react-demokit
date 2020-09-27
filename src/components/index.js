@@ -43,7 +43,7 @@ export default class ReactDemokit extends Component {
         <div className="is-body">{children}</div>
         <ReactSwUpdateTips value={this.state.hasUpdate} />
         <ReactGithubCorner value={url} />
-        <footer className="is-footer">v__VERSION__</footer>
+        <footer className="is-footer">v{ReactDemokit.version}</footer>
       </div>
     );
   }
