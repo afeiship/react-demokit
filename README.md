@@ -35,23 +35,11 @@ npm update @feizheng/react-demokit
   ```
 2. import js
   ```js
-  import NxOfflineSw from '@feizheng/next-offline-sw';
   import React from 'react';
   import ReactDOM from 'react-dom';
   import ReactDemokit from '@feizheng/react-demokit';
   import './assets/style.scss';
-
   class App extends React.Component {
-    state = { hasUpdate: false };
-
-    componentDidMount() {
-      NxOfflineSw.install({
-        onUpdateReady: () => {
-          this.setState({ hasUpdate: true });
-        }
-      });
-    }
-
     render() {
       return (
         <div className="p-3 app-container">
