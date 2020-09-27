@@ -48,7 +48,7 @@ npm update @feizheng/react-demokit
       return (
         <div className="app-container">
           <ReactDemokit
-            title="react domkit"
+            title="react demokit"
             description={pkg.description}
             className="p-6">
             <button className="button">I'm the component 🐶</button>
