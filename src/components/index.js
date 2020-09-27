@@ -26,11 +26,15 @@ export default class ReactDemokit extends Component {
     /**
      * The component description.
      */
-    description: PropTypes.string
+    description: PropTypes.string,
+    /**
+     * Main element.
+     */
+    element: PropTypes.element
   };
 
   static defaultProps = {
-    url: 'https://create-react-app.dev/img/logo.svg'
+    element: <img width="160" src="https://create-react-app.dev/img/logo.svg" />
   };
 
   state = { hasUpdate: false };
@@ -47,6 +51,7 @@ export default class ReactDemokit extends Component {
     const {
       className,
       children,
+      element,
       url,
       title,
       description,
@@ -59,7 +64,7 @@ export default class ReactDemokit extends Component {
         className={classNames(CLASS_NAME, className)}
         {...props}>
         <header className="is-header">
-          <img src={url} />
+          {element}
           <h1>{title}</h1>
           <h2>{description}</h2>
         </header>

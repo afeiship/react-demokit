@@ -17,12 +17,13 @@ npm update @feizheng/react-demokit
 ```
 
 ## properties
-| Name        | Type   | Required | Default                                     | Description                           |
-| ----------- | ------ | -------- | ------------------------------------------- | ------------------------------------- |
-| className   | string | false    | -                                           | The extended className for component. |
-| url         | string | false    | 'https://create-react-app.dev/img/logo.svg' | The github homepage url.              |
-| title       | string | false    | -                                           | The compoennt name.                   |
-| description | string | false    | -                                           | The component description.            |
+| Name        | Type    | Required | Default                                                             | Description                           |
+| ----------- | ------- | -------- | ------------------------------------------------------------------- | ------------------------------------- |
+| className   | string  | false    | -                                                                   | The extended className for component. |
+| url         | string  | false    | -                                                                   | The github homepage url.              |
+| title       | string  | false    | -                                                                   | The compoennt name.                   |
+| description | string  | false    | -                                                                   | The component description.            |
+| element     | element | false    | <img width="160" src="https://create-react-app.dev/img/logo.svg" /> | Main element.                         |
 
 
 ## usage

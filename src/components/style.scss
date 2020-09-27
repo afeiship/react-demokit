@@ -32,9 +32,8 @@ $react-demokit-options: () !default;
       display: none;
     }
 
-    img {
-      width: 150px;
-      margin: 30px auto;
+    img{
+      display: inline-block;
     }
   }
 
