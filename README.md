@@ -17,10 +17,12 @@ npm update @feizheng/react-demokit
 ```
 
 ## properties
-| Name      | Type   | Required | Default | Description                           |
-| --------- | ------ | -------- | ------- | ------------------------------------- |
-| className | string | false    | -       | The extended className for component. |
-| url       | string | false    | -       | The github homepage url.              |
+| Name        | Type   | Required | Default                                     | Description                           |
+| ----------- | ------ | -------- | ------------------------------------------- | ------------------------------------- |
+| className   | string | false    | -                                           | The extended className for component. |
+| url         | string | false    | 'https://create-react-app.dev/img/logo.svg' | The github homepage url.              |
+| title       | string | false    | -                                           | The compoennt name.                   |
+| description | string | false    | -                                           | The component description.            |
 
 
 ## usage
@@ -37,14 +39,19 @@ npm update @feizheng/react-demokit
   ```js
   import React from 'react';
   import ReactDOM from 'react-dom';
+  import pkg from '../package.json';
   import ReactDemokit from '@feizheng/react-demokit';
   import './assets/style.scss';
+
   class App extends React.Component {
     render() {
       return (
         <div className="app-container">
-          <ReactDemokit>
-            <button className="button">I am a button</button>
+          <ReactDemokit
+            title="react domkit"
+            description={pkg.description}
+            className="p-6">
+            <button className="button">I'm the component 🐶</button>
           </ReactDemokit>
         </div>
       );

@@ -18,10 +18,20 @@ export default class ReactDemokit extends Component {
     /**
      * The github homepage url.
      */
-    url: PropTypes.string
+    url: PropTypes.string,
+    /**
+     * The compoennt name.
+     */
+    title: PropTypes.string,
+    /**
+     * The component description.
+     */
+    description: PropTypes.string
   };
 
-  static defaultProps = {};
+  static defaultProps = {
+    url: 'https://create-react-app.dev/img/logo.svg'
+  };
 
   state = { hasUpdate: false };
 
@@ -34,12 +44,25 @@ export default class ReactDemokit extends Component {
   }
 
   render() {
-    const { className, children, url, ...props } = this.props;
+    const {
+      className,
+      children,
+      url,
+      title,
+      description,
+      ...props
+    } = this.props;
+
     return (
       <div
         data-component={CLASS_NAME}
         className={classNames(CLASS_NAME, className)}
         {...props}>
+        <header className="is-header">
+          <img src={url} />
+          <h1>{title}</h1>
+          <h2>{description}</h2>
+        </header>
         <div className="is-body">{children}</div>
         <ReactSwUpdateTips value={this.state.hasUpdate} />
         <ReactGithubCorner value={url} />
