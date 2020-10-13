@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/react-demokit",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Demo tookit for react.",
   "main": "dist/index.js",
   "scripts": {
@@ -47,12 +47,9 @@
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "@babel/register": "^7.11.5",
-    "@feizheng/next-offline-sw": "^1.0.2",
     "@feizheng/next-replace-in-file": "^1.0.1",
     "@feizheng/rake-git": "^1.2.1",
-    "@feizheng/react-github-corner": "^1.0.1",
     "@feizheng/react-markdown-props": "^1.2.3",
-    "@feizheng/react-sw-update-tips": "^1.0.4",
     "@feizheng/webpack-lib-kits": "^1.1.28",
     "@testing-library/react": "^11.0.2",
     "autoprefixer": "^9.8.6",
@@ -80,7 +77,10 @@
   "dependencies": {
     "@feizheng/noop": "^1.0.0",
     "classnames": "^2.2.6",
-    "object-assign": "^4.1.1"
+    "object-assign": "^4.1.1",
+    "@feizheng/next-offline-sw": "^1.0.2",
+    "@feizheng/react-sw-update-tips": "^1.0.4",
+    "@feizheng/react-github-corner": "^1.0.1"
   },
   "publishConfig": {
     "access": "public",
