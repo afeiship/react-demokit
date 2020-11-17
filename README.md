@@ -11,11 +11,6 @@
 npm install -S @jswork/react-demokit
 ```
 
-## update
-```shell
-npm update @jswork/react-demokit
-```
-
 ## properties
 | Name        | Type    | Required | Default                                                             | Description                           |
 | ----------- | ------- | -------- | ------------------------------------------------------------------- | ------------------------------------- |
