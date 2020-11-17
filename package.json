@@ -1,6 +1,6 @@
 {
   "name": "@jswork/react-demokit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Demo tookit for react.",
   "main": "dist/index.js",
   "scripts": {
@@ -19,7 +19,8 @@
   },
   "keywords": [
     "react",
-    "component"
+    "docs",
+    "demo"
   ],
   "author": "afei",
   "license": "MIT",

@@ -2,7 +2,7 @@ const rmp = require('@jswork/react-markdown-props');
 const fs = require('fs');
 const indentString = require('indent-string');
 
-require('@jswork/next-js-core2');
+require('@jswork/next');
 require('@jswork/next-replace-in-file');
 
 nx.declare({
